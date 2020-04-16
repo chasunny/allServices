@@ -19,11 +19,11 @@ public class DeliveryService {
 	RestaurantRepo repo;
 	
 	
-	//kafka listener
-      @KafkaListener(topics = "kafke_producer_messaging", groupId = "group_json", containerFactory = "concurrentKafkaListenerContainerFactory")
-	  public void consume(String brokerMessage) {
-	   System.out.println("message: " + brokerMessage.toString());
-		 }
+//	//kafka listener
+//      @KafkaListener(topics = "kafke_producer_messaging", groupId = "group_json", containerFactory = "concurrentKafkaListenerContainerFactory")
+//	  public void consume(String brokerMessage) {
+//	   System.out.println("message: " + brokerMessage.toString());
+//		 }
 	
       
 	public String postOrder(OrderDetails od) throws Exception 
