@@ -14,17 +14,17 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import com.order.my.food.model.DeliveryBoy;
 
 
-@FeignClient(name ="netflix-zuul-api-gateway-server")
-@RibbonClient(name ="order-management")
+// @FeignClient(name ="netflix-zuul-api-gateway-server")
+// @RibbonClient(name ="order-management")
 public interface FoodProxy {
 		
 	    
-		@GetMapping("/order-management/dboy/username/{username}/restname/{restname}/item/{item}/price/{price}")
-		@Transactional
-		@Modifying
-		@ResponseBody
-		public DeliveryBoy getBoyDetails(@PathVariable String username,@PathVariable
-				String restname,
-				@PathVariable String item,
-				@PathVariable int price);
+// // 		@GetMapping("/order-management/dboy/username/{username}/restname/{restname}/item/{item}/price/{price}")
+// 		@Transactional
+// 		@Modifying
+// 		@ResponseBody
+// 		public DeliveryBoy getBoyDetails(@PathVariable String username,@PathVariable
+// 				String restname,
+// 				@PathVariable String item,
+// 				@PathVariable int price);
 	}
