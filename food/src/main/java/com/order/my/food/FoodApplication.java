@@ -14,8 +14,8 @@ import org.springframework.context.annotation.Bean;
 
 
 @SpringBootApplication
-@EnableDiscoveryClient
-@EnableFeignClients("com.order.my.food")
+// @EnableDiscoveryClient
+// @EnableFeignClients("com.order.my.food")
 public class FoodApplication {
 
 	public static void main(String[] args) {
