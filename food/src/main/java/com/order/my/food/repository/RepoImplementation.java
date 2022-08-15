@@ -20,9 +20,10 @@ import org.springframework.stereotype.Repository;
 import com.order.my.food.model.FoodMenu;
 import com.order.my.food.model.Restaurant;
 
-@Repository
-public class RepoImplementation implements JpaRepository<Restaurant, Long> {
+// @Repository
+public class RepoImplementation {
 
+// 	 implements JpaRepository<Restaurant, Long>
 // 	@Autowired
 // 	EntityManager em;
 	
