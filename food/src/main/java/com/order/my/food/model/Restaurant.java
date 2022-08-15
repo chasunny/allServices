@@ -23,23 +23,23 @@ import javax.validation.constraints.Size;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
-@Entity
+//@Entity
 public class Restaurant {
 	
 	
 
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private long id;
+//	@Id
+//	@GeneratedValue(strategy = GenerationType.IDENTITY)
+//	private long id;
 	
 	
 	
-	private int distance;
-	private int price;
-	private double rating;
-	private String nOfRest;
+//	private int distance;
+//	private int price;
+//	private double rating;
+//	private String nOfRest;
 	
-	private String type;
+//	private String type;
 	
 //
 //	@ManyToMany(cascade = CascadeType.ALL)
@@ -52,82 +52,82 @@ public class Restaurant {
 //	private Set<FoodMenu> foodMenu = new HashSet<>();
 
 	
-    public Restaurant() {
-		super();
-	}
+  //  public Restaurant() {
+//		super();
+//	}
 
 
-	public long getId() {
-		return id;
-	}
+//	public long getId() {
+//		return id;
+//	}
+//
+
+//	public void setId(long id) {
+//		this.id = id;
+//	}
 
 
-	public void setId(long id) {
-		this.id = id;
-	}
+//	public int getDistance() {
+//		return distance;
+//	}
+//
+
+//	public void setDistance(int distance) {
+//		this.distance = distance;
+//	}
 
 
-	public int getDistance() {
-		return distance;
-	}
+//	public int getPrice() {
+//		return price;
+//	}
 
 
-	public void setDistance(int distance) {
-		this.distance = distance;
-	}
+//	public void setPrice(int price) {
+//		this.price = price;
+//	}
 
 
-	public int getPrice() {
-		return price;
-	}
+//	public double getRating() {
+//		return rating;
+//	}
+//
+
+//	public void setRating(double rating) {
+//		this.rating = rating;
+//	}
 
 
-	public void setPrice(int price) {
-		this.price = price;
-	}
+//	public String getnOfRest() {
+//		return nOfRest;
+//	}
 
 
-	public double getRating() {
-		return rating;
-	}
+//	public void setnOfRest(String nOfRest) {
+//		this.nOfRest = nOfRest;
+//	}
 
 
-	public void setRating(double rating) {
-		this.rating = rating;
-	}
+//	public String getType() {
+//		return type;
+//	}
 
 
-	public String getnOfRest() {
-		return nOfRest;
-	}
-
-
-	public void setnOfRest(String nOfRest) {
-		this.nOfRest = nOfRest;
-	}
-
-
-	public String getType() {
-		return type;
-	}
-
-
-	public void setType(String type) {
-		this.type = type;
-	}
+//	public void setType(String type) {
+//		this.type = type;
+//	}
 
 
 	
 
-	public Restaurant(long id, int distance, int price, double rating, String nOfRest, String type) {
-		super();
-		this.id = id;
-		this.distance = distance;
-		this.price = price;
-		this.rating = rating;
-		this.nOfRest = nOfRest;
-		this.type = type;
-	}
+//	public Restaurant(long id, int distance, int price, double rating, String nOfRest, String type) {
+//		super();
+//		this.id = id;
+//		this.distance = distance;
+//		this.price = price;
+//		this.rating = rating;
+//		this.nOfRest = nOfRest;
+//		this.type = type;
+//	}
 
 	
 
