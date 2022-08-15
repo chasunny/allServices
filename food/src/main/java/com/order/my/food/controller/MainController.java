@@ -40,7 +40,7 @@ public class MainController {
 //	@Autowired
 //	private KafkaTemplate<String, String> kafkaTemplate;
 	
-	List<Restaurant> temp=new ArrayList<Restaurant>();
+// 	List<Restaurant> temp=new ArrayList<Restaurant>();
 	
 // 	private static final String TOPIC ="order_service";
 	
