@@ -53,7 +53,7 @@ public class MainController {
 //	
 	@GetMapping("/greeting")
 	public String testingMessage(){
-		return "sample test message"
+		return "sample test message";
 	}
 	
 	//fallback method for hystrix no restaurants
