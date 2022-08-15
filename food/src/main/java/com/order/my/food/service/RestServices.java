@@ -23,7 +23,7 @@ package com.order.my.food.service;
 
 //distance,type,price ,rating,Item,name_of_restaurants
 
-@Service
+// @Service
 public class RestServices{
 	
 // 	@Autowired
