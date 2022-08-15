@@ -35,33 +35,33 @@ public class RestServices{
 	
 	
 	//returning name of the restaurant with distance
-	public List<Restaurant> getDetailsbyDist(int dist)
-	{
-		   return rst.findRestByDistance(dist);
-	}
+	//public List<Restaurant> getDetailsbyDist(int dist)
+	//{
+	//	   return rst.findRestByDistance(dist);
+	//}
 	
 	
 	//returning name of the restaurant with type
-		public List<Restaurant> getDetailsbyType(String type)
-		{
-			   return rst.findRestByType(type);
-		}
+	//	public List<Restaurant> getDetailsbyType(String type)
+	//	{
+	//		   return rst.findRestByType(type);
+	//	}
 	
 	
 		//returning name of the restaurant with price
-		public List<Restaurant> getDetailsbyPrice(int price)
-		{
-			   return rst.findRestByPrice(price);
-		}
+	//	public List<Restaurant> getDetailsbyPrice(int price)
+	//	{
+	//		   return rst.findRestByPrice(price);
+	//	}
 		
 		//returning name of the restaurant with rating
-		public List<Restaurant> getDetailsbyRating(double rating)
-		{
-		   return rst.findRestByRating(rating);
-		}
+	//	public List<Restaurant> getDetailsbyRating(double rating)
+	//	{
+	//	   return rst.findRestByRating(rating);
+	//	}
 		
-		public List getMenuDetails(String name,String type)
-		{
-			return rst.findItemList(name, type);
-		}
+	//	public List getMenuDetails(String name,String type)
+	//	{
+	//		return rst.findItemList(name, type);
+	//	}
 }
