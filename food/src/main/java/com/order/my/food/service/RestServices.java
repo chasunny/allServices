@@ -1,37 +1,37 @@
 package com.order.my.food.service;
 
-import java.util.List;
-import java.util.Optional;
-import java.util.concurrent.Future;
+// import java.util.List;
+// import java.util.Optional;
+// import java.util.concurrent.Future;
 
-import javax.persistence.EntityManager;
-import javax.persistence.TypedQuery;
+// import javax.persistence.EntityManager;
+// import javax.persistence.TypedQuery;
 
-import org.apache.http.HttpStatus;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.Example;
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.Pageable;
-import org.springframework.data.domain.Sort;
-import org.springframework.http.ResponseEntity;
-import org.springframework.stereotype.Service;
+// import org.apache.http.HttpStatus;
+// import org.springframework.beans.factory.annotation.Autowired;
+// import org.springframework.data.domain.Example;
+// import org.springframework.data.domain.Page;
+// import org.springframework.data.domain.Pageable;
+// import org.springframework.data.domain.Sort;
+// import org.springframework.http.ResponseEntity;
+// import org.springframework.stereotype.Service;
 
-import com.order.my.food.model.FoodMenu;
-import com.order.my.food.model.Order;
-import com.order.my.food.model.Restaurant;
-import com.order.my.food.repository.RepoImplementation;
+// import com.order.my.food.model.FoodMenu;
+// import com.order.my.food.model.Order;
+// import com.order.my.food.model.Restaurant;
+// import com.order.my.food.repository.RepoImplementation;
 
 //distance,type,price ,rating,Item,name_of_restaurants
 
 @Service
 public class RestServices{
 	
-	@Autowired
-	RepoImplementation rst;
+// 	@Autowired
+// 	RepoImplementation rst;
 	
 	
-	@Autowired
-	EntityManager em;
+// 	@Autowired
+// 	EntityManager em;
 	
 	
 	//returning name of the restaurant with distance
