@@ -51,6 +51,10 @@ public class MainController {
 //		return "Published successfully";
 //	}
 //	
+	@GetMapping("/greeting")
+	public String testingMessage(){
+		return "sample test message"
+	}
 	
 	//fallback method for hystrix no restaurants
 //	  public List<Restaurant> fallbackgetByDist(int dist){
