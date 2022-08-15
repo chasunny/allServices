@@ -62,52 +62,52 @@ public class MainController {
 //	    }
 	
 	//returning restaurants with distance
-	@GetMapping("/dist/{dist}")
+	//@GetMapping("/dist/{dist}")
 //	@HystrixCommand(fallbackMethod="fallbackgetByDist")
-    public  List<Restaurant> getDetByDis(@PathVariable int dist) throws Exception
-    {
-    	List<Restaurant>temp =rs.getDetailsbyDist(dist);
+   // public  List<Restaurant> getDetByDis(@PathVariable int dist) throws Exception
+    //{
+    //	List<Restaurant>temp =rs.getDetailsbyDist(dist);
 //    	if(dist >=0)
-    		return temp;
+    	//	return temp;
 //    	else
 //    		throw new RuntimeException();
 //        
-    }
+    //}
     
 	//returning restaurants with type
-	@GetMapping("/type/{type}")
-	public List<Restaurant> getDetByType(@PathVariable String type)
-	{
-		return rs.getDetailsbyType(type);
-	}
+	//@GetMapping("/type/{type}")
+	//public List<Restaurant> getDetByType(@PathVariable String type)
+	//{
+	//	return rs.getDetailsbyType(type);
+	//}
 	
 	
 	//returning details with price
-	@GetMapping("/price/{price}")
-	public List<Restaurant> getDetByprice(@PathVariable int price)
-	{
-		return rs.getDetailsbyPrice(price);
-	}
+	//@GetMapping("/price/{price}")
+	//public List<Restaurant> getDetByprice(@PathVariable int price)
+	//{
+	//	return rs.getDetailsbyPrice(price);
+	//}
 	
 	//get details with rating
-	@GetMapping("/rating/{rating}")
-	public List<Restaurant> getDetByRating(@PathVariable double rating)
-	{
-		return rs.getDetailsbyRating(rating);
-	}
+	//@GetMapping("/rating/{rating}")
+	//public List<Restaurant> getDetByRating(@PathVariable double rating)
+	//{
+	//	return rs.getDetailsbyRating(rating);
+	//}
 	
 	//menu details
-	@GetMapping("/name/{name}/type/{type}")
-	public List getMenuDetails(@PathVariable String name,@PathVariable String type)
-	{
-		return rs.getMenuDetails(name, type);
-	}
+	//@GetMapping("/name/{name}/type/{type}")
+	//public List getMenuDetails(@PathVariable String name,@PathVariable String type)
+	//{
+	//	return rs.getMenuDetails(name, type);
+	//}
 	
-	@GetMapping("orderdetails/dboy/username/{username}/restname/{restname}/item/{item}/price/{price}")
-	@Transactional
-	@Modifying
-	public DeliveryBoy getOrderBoyDetails(@PathVariable String username,@PathVariable String restname,@PathVariable String item,@PathVariable int price)
-	{
-		return prxy.getBoyDetails(username, restname, item, price);
-	}
+	//@GetMapping("orderdetails/dboy/username/{username}/restname/{restname}/item/{item}/price/{price}")
+	//@Transactional
+	//@Modifying
+	//public DeliveryBoy getOrderBoyDetails(@PathVariable String username,@PathVariable String restname,@PathVariable String item,@PathVariable int price)
+	//{
+	//	return prxy.getBoyDetails(username, restname, item, price);
+	//}
 }
