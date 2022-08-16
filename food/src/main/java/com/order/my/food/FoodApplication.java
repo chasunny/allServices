@@ -9,11 +9,12 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 // import org.springframework.cloud.netflix.hystrix.EnableHystrix;
 // import org.springframework.cloud.openfeign.EnableFeignClients;
 import org.springframework.context.annotation.Bean;
+import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 
 
 
 
-@SpringBootApplication
+@SpringBootApplication(exclude = {DataSourceAutoConfiguration.class })
 // @EnableDiscoveryClient
 // @EnableFeignClients("com.order.my.food")
 public class FoodApplication {
